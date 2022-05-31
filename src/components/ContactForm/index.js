@@ -2,22 +2,23 @@ import React from "react"
 import { Form, Email, Submit } from "../../Elements/FormElement"
 
 const ContactForm = () => {
-  const onSubmit = event => {
-    event.preventDefault()
-  }
   return (
     <div>
-      <Form onSubmit={onSubmit}>
-        <Email
+      <form
+        action="https://getform.io/f/1166a10c-65d5-44a5-add7-ea062dc44747"
+        method="POST"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <input
           type="email"
+          name="email"
           placeholder="Email"
           className="input-email"
-          id="input"
         />
-        <Submit type="submit" className="btn-submit">
+        <button type="submit" className="btn-submit">
           Join Waitlist
-        </Submit>
-      </Form>
+        </button>
+      </form>
     </div>
   )
 }

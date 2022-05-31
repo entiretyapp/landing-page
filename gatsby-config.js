@@ -6,6 +6,20 @@ module.exports = {
     siteUrl: `https://entirety.app/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-H0BRBFV54S", // Google Analytics / GA
+        ],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
@@ -45,21 +59,6 @@ module.exports = {
               variants: ["400", "500", "600", "700", "800"],
             },
           ],
-        },
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-DRXCYERS46", // Google Analytics / GA
-          "UA-228095343-1", // Google Universal Analytics / UA (about to be deprecated 2023)
-        ],
-        // This object is used for configuration specific to this plugin
-        pluginConfig: {
-          // Puts tracking script in the head instead of the body
-          head: true,
         },
       },
     },

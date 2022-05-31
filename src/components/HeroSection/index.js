@@ -1,7 +1,5 @@
 import React from "react"
-// import { OutboundLink } from "gatsby-plugin-google-gtag"
-import { Button } from "../../Elements/ButtonElement"
-import { Form, Email, Submit } from "../../Elements/FormElement"
+import ContactForm from "../ContactForm"
 
 import "./HeroSection.css"
 
@@ -20,17 +18,7 @@ const HeroSection = () => {
           Sign up with your email address to participate in our upcoming beta
           group!
         </p>
-        <Form
-          onSubmit={onSubmit}
-          name="contact"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          <input type="hidden" name="form-name" value="contact" />
-          <Email type="email" placeholder="Email" />
-          <Submit type="submit">Join waitlist</Submit>
-        </Form>
+        <ContactForm />
       </div>
     </div>
   )
