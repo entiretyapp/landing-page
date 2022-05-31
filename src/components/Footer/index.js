@@ -24,53 +24,53 @@ const Footer = () => {
     <FooterContainer>
       <SocialMedia>
         <SocialMediaWrap>
-          <SocialLogo to="/">Entirety</SocialLogo>
+          {/* <SocialLogo to="/">Entirety</SocialLogo> */}
           <WebsiteRights>
             Entirety &copy; {new Date().getFullYear()}
           </WebsiteRights>
           <SocialIcons>
-            <SocialIconLink
+            {/* <SocialIconLink
               href="/"
               target="_blank"
               aria-label="Facebook"
               rel="noopener noreferrer"
             >
               <FaFacebook />
-            </SocialIconLink>
-            <SocialIconLink
+            </SocialIconLink> */}
+            {/* <SocialIconLink
               href="/"
               target="_blank"
               aria-label="Instagram"
               rel="noopener noreferrer"
             >
               <FaInstagram />
-            </SocialIconLink>
-            <SocialIconLink
+            </SocialIconLink> */}
+            {/* <SocialIconLink
               href="/"
               target="_blank"
               aria-label="Youtube"
               rel="noopener noreferrer"
             >
               <FaYoutube />
-            </SocialIconLink>
+            </SocialIconLink> */}
             <SocialIconLink
-              href="/"
+              href="https://twitter.com/entiretyapp"
               target="_blank"
               aria-label="Twitter"
               rel="noopener noreferrer"
             >
               <FaTwitter />
             </SocialIconLink>
-            <SocialIconLink
+            {/* <SocialIconLink
               href="/"
               target="_blank"
               aria-label="Linkedin"
               rel="noopener noreferrer"
             >
               <FaLinkedin />
-            </SocialIconLink>
+            </SocialIconLink> */}
             <SocialIconLink
-              href="mailto:natiivo2704@gmail.com"
+              href="mailto:sean@entirety.app"
               target="_blank"
               aria-label="Email"
               rel="noopener noreferrer"

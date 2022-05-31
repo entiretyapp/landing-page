@@ -1,25 +1,36 @@
 import React from "react"
 // import { OutboundLink } from "gatsby-plugin-google-gtag"
-import { Button } from "../ButtonElement"
+import { Button } from "../../Elements/ButtonElement"
+import { Form, Email, Submit } from "../../Elements/FormElement"
+
 import "./HeroSection.css"
 
 const HeroSection = () => {
+  const onSubmit = event => {
+    event.preventDefault()
+  }
+
   return (
     <div className="hero-container">
       <h1>Entirety</h1>
+      <div className="divider" />
       <p>The modern entity management app for real estate investors</p>
-      <div className="hero-btns">
-        <Button
-          fontBig
-          big
-          primary
-          bold
-          href="https://www.vacasa.com/unit/82659"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="hero-actions">
+        <p>
+          Sign up with your email address to participate in our upcoming beta
+          group!
+        </p>
+        <Form
+          onSubmit={onSubmit}
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
-          Book A Stay
-        </Button>
+          <input type="hidden" name="form-name" value="contact" />
+          <Email type="email" placeholder="Email" />
+          <Submit type="submit">Join waitlist</Submit>
+        </Form>
       </div>
     </div>
   )

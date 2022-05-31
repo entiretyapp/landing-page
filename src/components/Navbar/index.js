@@ -11,7 +11,8 @@ import {
   NavItem,
   NavLinks,
 } from "./NavbarElements"
-import { Button } from "../ButtonElement"
+
+import logo from "../../assets/images/logo.svg"
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -37,7 +38,10 @@ const Navbar = () => {
       <IconContext.Provider value={{ color: "#141414" }}>
         <Nav active={scroll} click={click}>
           <NavbarContainer>
-            <NavLogo to="/">Entirety</NavLogo>
+            <NavLogo to="/">
+              <NavIcon src={logo} alt="logo" />
+              Entirety
+            </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
@@ -45,19 +49,9 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLinks to="/contact">Contact</NavLinks>
-              </NavItem>
-              <NavItem>
-                <Button
-                  primary
-                  href="https://www.vacasa.com/unit/82659"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Book Now
-                </Button>
-              </NavItem>
+              </NavItem> */}
             </NavMenu>
           </NavbarContainer>
         </Nav>
