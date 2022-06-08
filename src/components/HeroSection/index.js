@@ -15,8 +15,7 @@ const HeroSection = () => {
       <p>The modern entity management app for real estate investors</p>
       <div className="hero-actions">
         <p>
-          Sign up with your email address to participate in our upcoming beta
-          group!
+          Sign up with your email address to get notified when the app launches!
         </p>
         <ContactForm />
       </div>
