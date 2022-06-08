@@ -4,10 +4,6 @@ import ContactForm from "../ContactForm"
 import "./HeroSection.css"
 
 const HeroSection = () => {
-  const onSubmit = event => {
-    event.preventDefault()
-  }
-
   return (
     <div className="hero-container">
       <h1>Entirety</h1>
