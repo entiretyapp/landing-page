@@ -70,7 +70,7 @@ const Footer = () => {
               <FaLinkedin />
             </SocialIconLink> */}
             <SocialIconLink
-              href="mailto:sean@entirety.app"
+              href="mailto:hello@entirety.app"
               target="_blank"
               aria-label="Email"
               rel="noopener noreferrer"
